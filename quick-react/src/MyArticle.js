@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MyNew from './MyNew';
 
 export default class MyArticle extends Component {
     render() {
@@ -7,6 +8,8 @@ export default class MyArticle extends Component {
                 <dt>
                     <a href={this.props.url}>
                         {this.props.title}</a>
+                    {/* {this.props.isNew ? <MyNew /> : null} */}
+                    {this.props.isNew && <MyNew />}
                 </dt>
                 <dd>
                     {this.props.description}
