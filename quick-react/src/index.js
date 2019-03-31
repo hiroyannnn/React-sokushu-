@@ -17,19 +17,19 @@ import MyBook from './MyBook';
 // };
 
 // comp-nest
-const book = {
-    isbn: 'WGS-JST-001',
-    title: '速習 webpack',
-    price: 454,
-    published: 'WINGSプロジェクト'
-};
+// const book = {
+//     isbn: 'WGS-JST-001',
+//     title: '速習 webpack',
+//     price: 454,
+//     published: 'WINGSプロジェクト'
+// };
 
 ReactDOM.render(
     // default
     // <App />, 
 
-    // props 基本
-    // <MyHello name="山田" />,
+    // prop-basic
+    <MyHello />,
 
     // props -2
     // propsの渡し方は下記のように色々
@@ -59,7 +59,9 @@ ReactDOM.render(
     // </MyHelloConponent>,
 
     // comp-nest
-    <MyBook info={book} />,
+    // <MyBook info={book} />,
+
+
     document.getElementById('root')
 
 );
