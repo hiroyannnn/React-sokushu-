@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
-import MyHello from './MyHello';
-import MyType from './MyType';
-import MyAttrMulti from './MyAttrMulti';
-import MyHelloConponent from './MyHelloConponent';
-import MyBook from './MyBook';
-import MyProp, { Member } from './MyProps';
-import MyHelloDef from './MyHelloDef';
-import MyArticle from './MyArticle';
-import MyEvent from './MyEvent';
+// import MyHello from './MyHello';
+// import MyType from './MyType';
+// import MyAttrMulti from './MyAttrMulti';
+// import MyHelloConponent from './MyHelloConponent';
+// import MyBook from './MyBook';
+// import MyProp, { Member } from './MyProps';
+// import MyHelloDef from './MyHelloDef';
+// import MyArticle from './MyArticle';
+// import MyEvent from './MyEvent';
+import MyPool from './MyPool';
 
 // multi
 // const data = {
@@ -29,17 +30,17 @@ import MyEvent from './MyEvent';
 // };
 
 // loop-basic
-const articles = [
-    {
-        url: 'https://www.atmarkit.co.jp/ait/series/9383/',
-        title: 'Angular TIPS',
-        description: '人気のJavaScriptフレームワーク「Angular」の目的別リファレンス',
-        isNew: true
-    },
-]
-const list = articles.map((article) =>
-    <MyArticle {...article} key={article.url} />
-)
+// const articles = [
+//     {
+//         url: 'https://www.atmarkit.co.jp/ait/series/9383/',
+//         title: 'Angular TIPS',
+//         description: '人気のJavaScriptフレームワーク「Angular」の目的別リファレンス',
+//         isNew: true
+//     },
+// ]
+// const list = articles.map((article) =>
+//     <MyArticle {...article} key={article.url} />
+// )
 
 ReactDOM.render(
     // default
@@ -101,9 +102,10 @@ ReactDOM.render(
     // </dl>,
 
     // event-basic
-    <MyEvent greet="Hello" />,
+    // <MyEvent greet="Hello" />,
+    // event-pool
+    <MyPool />,
     document.getElementById('root')
-
 );
 
 // If you want your app to work offline and load faster, you can change
