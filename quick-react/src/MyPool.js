@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 
 export default class MyEvent extends Component {
     show(e) {
-        console.log(e.type);
+        const t = e.type;
+        console.log(t);
         setTimeout(() => {
-            console.log(e.type);
+            console.log(t);
         }, 1000);
     }
     render() {
