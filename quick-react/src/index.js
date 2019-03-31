@@ -12,7 +12,8 @@ import * as serviceWorker from './serviceWorker';
 // import MyHelloDef from './MyHelloDef';
 // import MyArticle from './MyArticle';
 // import MyEvent from './MyEvent';
-import MyPool from './MyPool';
+// import MyPool from './MyPool';
+import MyState from './MyState';
 
 // multi
 // const data = {
@@ -104,7 +105,10 @@ ReactDOM.render(
     // event-basic
     // <MyEvent greet="Hello" />,
     // event-pool
-    <MyPool />,
+    // <MyPool />,
+
+    // state-basic 
+    <MyState />,
     document.getElementById('root')
 );
 
