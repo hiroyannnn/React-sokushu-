@@ -7,11 +7,21 @@ import MyHello from './MyHello';
 import MyType from './MyType';
 import MyAttrMulti from './MyAttrMulti';
 import MyHelloConponent from './MyHelloConponent';
+import MyBook from './MyBook';
+
 // multi
-const data = {
-    name: '山田権左衛門',
-    age: 18,
-    sex: '男',
+// const data = {
+//     name: '山田権左衛門',
+//     age: 18,
+//     sex: '男',
+// };
+
+// comp-nest
+const book = {
+    isbn: 'WGS-JST-001',
+    title: '速習 webpack',
+    price: 454,
+    published: 'WINGSプロジェクト'
 };
 
 ReactDOM.render(
@@ -44,10 +54,12 @@ ReactDOM.render(
     // <MyAttrMulti {...data} />,
 
     // children
-    <MyHelloConponent>
-        <b>山田</b>
-    </MyHelloConponent>,
+    // <MyHelloConponent>
+    //     <b>山田</b>
+    // </MyHelloConponent>,
 
+    // comp-nest
+    <MyBook info={book} />,
     document.getElementById('root')
 
 );
