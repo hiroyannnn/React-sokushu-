@@ -8,6 +8,7 @@ import MyType from './MyType';
 import MyAttrMulti from './MyAttrMulti';
 import MyHelloConponent from './MyHelloConponent';
 import MyBook from './MyBook';
+import MyProp, { Member } from './MyProps';
 
 // multi
 // const data = {
@@ -29,7 +30,7 @@ ReactDOM.render(
     // <App />, 
 
     // prop-basic
-    <MyHello />,
+    // <MyHello />,
 
     // props -2
     // propsの渡し方は下記のように色々
@@ -61,7 +62,9 @@ ReactDOM.render(
     // comp-nest
     // <MyBook info={book} />,
 
-
+    // prop-type
+    // <MyProp prop1={new Member()} />,
+    <MyProp prop1="hoge" />,
     document.getElementById('root')
 
 );
