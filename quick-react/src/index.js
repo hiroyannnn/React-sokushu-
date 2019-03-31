@@ -36,6 +36,9 @@ const articles = [
         isNew: true
     },
 ]
+const list = articles.map((article) =>
+    <MyArticle {...article} key={article.url} />
+)
 
 ReactDOM.render(
     // default
@@ -93,9 +96,7 @@ ReactDOM.render(
 
     // loop-basic
     <dl>
-        {articles.map((article) =>
-            <MyArticle {...article} key={article.url} />
-        )}
+        {list}
     </dl>,
     document.getElementById('root')
 
