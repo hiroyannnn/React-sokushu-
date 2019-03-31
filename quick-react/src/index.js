@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
+import MyForm from './MyForm';
 // import MyHello from './MyHello';
 // import MyType from './MyType';
 // import MyAttrMulti from './MyAttrMulti';
@@ -14,7 +15,7 @@ import * as serviceWorker from './serviceWorker';
 // import MyEvent from './MyEvent';
 // import MyPool from './MyPool';
 // import MyState from './MyState';
-import MyParent from './MyParent';
+// import MyParent from './MyParent';
 
 // multi
 // const data = {
@@ -112,7 +113,10 @@ ReactDOM.render(
     // <MyState />,
 
     // state
-    <MyParent />,
+    // <MyParent />,
+
+    // form
+    <MyForm />,
     document.getElementById('root')
 );
 
