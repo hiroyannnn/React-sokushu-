@@ -2,6 +2,10 @@
 import React, { Component } from 'react';
 
 export default class MyEvent extends Component {
+    constructor(props) {
+        super(props)
+        this.show = this.show.bind(this);
+    }
     // 入力ボックス変更時にメッセージを出力
     show(e) {
         // greetプロパティ、入力値に基づいて、メッセージを生成
@@ -12,7 +16,7 @@ export default class MyEvent extends Component {
             <form>
                 <label htmlFor="txtName">名前：</label>
                 {/* 入力変更時にshowメソッドを呼び出し */}
-                <input id='txtName' type="text" onChange={this.show.bind(this)} />
+                <input id='txtName' type="text" onChange={this.show} />
             </form>
         );
     }
