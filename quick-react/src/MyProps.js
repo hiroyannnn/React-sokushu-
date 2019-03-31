@@ -12,4 +12,20 @@ export default class MyProp extends Component {
 MyProp.propTypes = {
     // Member型のプロパティ
     prop1: PropTypes.instanceOf(Member),
+    // どれか
+    prop2: PropTypes.oneOf(['男', '女', '不明']),
+    // 型のうちどれか
+    prop3: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+        PropTypes.bool,
+    ]),
+    // 配列のなかの要素を指定
+    prop4: PropTypes.arrayOf(PropTypes.number),
+    // オブジェクトのなかの要素を指定
+    prop5: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        age: PropTypes.number,
+        sex: PropTypes.oneOf(['男', '女', '不明'])
+    }),
 };

@@ -64,7 +64,15 @@ ReactDOM.render(
 
     // prop-type
     // <MyProp prop1={new Member()} />,
-    <MyProp prop1="hoge" />,
+    // <MyProp prop1="hoge" />,
+    // <MyProp prop2='男' />,
+    // <MyProp prop2="hoge" />,
+    // <MyProp prop3='男' />,
+    // <MyProp prop3={new Member()} />,
+    // <MyProp prop4={[10, 20]} />,
+    // <MyProp prop4={[10, "男"]} />,
+    // <MyProp prop5={{ name: '山田', age: 40, sex: '男' }} />,
+    <MyProp prop5={{ age: 40, sex: '男' }} />,
     document.getElementById('root')
 
 );
