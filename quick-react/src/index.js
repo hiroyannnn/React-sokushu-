@@ -11,6 +11,7 @@ import MyBook from './MyBook';
 import MyProp, { Member } from './MyProps';
 import MyHelloDef from './MyHelloDef';
 import MyArticle from './MyArticle';
+import MyEvent from './MyEvent';
 
 // multi
 // const data = {
@@ -95,9 +96,12 @@ ReactDOM.render(
     // <MyHello />,
 
     // loop-basic
-    <dl>
-        {list}
-    </dl>,
+    // <dl>
+    //     {list}
+    // </dl>,
+
+    // event-basic
+    <MyEvent greet="Hello" />,
     document.getElementById('root')
 
 );
