@@ -10,6 +10,7 @@ import MyHelloConponent from './MyHelloConponent';
 import MyBook from './MyBook';
 import MyProp, { Member } from './MyProps';
 import MyHelloDef from './MyHelloDef';
+import MyArticle from './MyArticle';
 
 // multi
 // const data = {
@@ -25,6 +26,16 @@ import MyHelloDef from './MyHelloDef';
 //     price: 454,
 //     published: 'WINGSプロジェクト'
 // };
+
+// loop-basic
+const articles = [
+    {
+        url: 'https://www.atmarkit.co.jp/ait/series/9383/',
+        title: 'Angular TIPS',
+        description: '人気のJavaScriptフレームワーク「Angular」の目的別リファレンス',
+        isNew: true
+    },
+]
 
 ReactDOM.render(
     // default
@@ -78,7 +89,14 @@ ReactDOM.render(
     // prop-def
     // <MyHelloDef />,
     // prop-other
-    <MyHello />,
+    // <MyHello />,
+
+    // loop-basic
+    <dl>
+        {articles.map((article) =>
+            <MyArticle {...article} key={article.url} />
+        )}
+    </dl>,
     document.getElementById('root')
 
 );
