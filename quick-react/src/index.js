@@ -76,7 +76,9 @@ ReactDOM.render(
     // <MyProp prop5={{ age: 40, sex: '男' }} />,
 
     // prop-def
-    <MyHelloDef />,
+    // <MyHelloDef />,
+    // prop-other
+    <MyHello />,
     document.getElementById('root')
 
 );
