@@ -13,7 +13,8 @@ import * as serviceWorker from './serviceWorker';
 // import MyArticle from './MyArticle';
 // import MyEvent from './MyEvent';
 // import MyPool from './MyPool';
-import MyState from './MyState';
+// import MyState from './MyState';
+import MyParent from './MyParent';
 
 // multi
 // const data = {
@@ -108,7 +109,10 @@ ReactDOM.render(
     // <MyPool />,
 
     // state-basic 
-    <MyState />,
+    // <MyState />,
+
+    // state
+    <MyParent />,
     document.getElementById('root')
 );
 
