@@ -9,7 +9,12 @@ export default class MyArticle extends Component {
                     <a href={this.props.url}>
                         {this.props.title}</a>
                     {/* {this.props.isNew ? <MyNew /> : null} */}
-                    {this.props.isNew && <MyNew />}
+                    {/* {this.props.isNew && <MyNew />} */}
+                    {(() => {
+                        if (this.props.isNew) {
+                            return <MyNew />
+                        }
+                    })()}
                 </dt>
                 <dd>
                     {this.props.description}
