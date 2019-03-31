@@ -9,6 +9,7 @@ import MyAttrMulti from './MyAttrMulti';
 import MyHelloConponent from './MyHelloConponent';
 import MyBook from './MyBook';
 import MyProp, { Member } from './MyProps';
+import MyHelloDef from './MyHelloDef';
 
 // multi
 // const data = {
@@ -72,7 +73,10 @@ ReactDOM.render(
     // <MyProp prop4={[10, 20]} />,
     // <MyProp prop4={[10, "男"]} />,
     // <MyProp prop5={{ name: '山田', age: 40, sex: '男' }} />,
-    <MyProp prop5={{ age: 40, sex: '男' }} />,
+    // <MyProp prop5={{ age: 40, sex: '男' }} />,
+
+    // prop-def
+    <MyHelloDef />,
     document.getElementById('root')
 
 );
