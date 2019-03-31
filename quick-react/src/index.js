@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import MyHello from './MyHello';
 import MyType from './MyType';
 import MyAttrMulti from './MyAttrMulti';
+import MyHelloConponent from './MyHelloConponent';
 // multi
 const data = {
     name: '山田権左衛門',
@@ -40,7 +41,13 @@ ReactDOM.render(
     // </div>,
 
     // multi
-    <MyAttrMulti {...data} />,
+    // <MyAttrMulti {...data} />,
+
+    // children
+    <MyHelloConponent>
+        <b>山田</b>
+    </MyHelloConponent>,
+
     document.getElementById('root')
 
 );
