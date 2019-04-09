@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
-import MyTextarea from './MyTextarea';
+import MySelect from './MySelect';
+// import MyTextarea from './MyTextarea';
 
 // import MyForm from './MyForm';
 // import MyHello from './MyHello';
@@ -120,8 +121,11 @@ ReactDOM.render(
     // form
     // <MyForm />,
 
-    // form
-    <MyTextarea />,
+    // form　textarea
+    // <MyTextarea />,
+
+    // from select
+    <MySelect />,
     document.getElementById('root')
 );
 
