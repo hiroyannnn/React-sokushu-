@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
-import MyForm from './MyForm';
+import MyTextarea from './MyTextarea';
+
+// import MyForm from './MyForm';
 // import MyHello from './MyHello';
 // import MyType from './MyType';
 // import MyAttrMulti from './MyAttrMulti';
@@ -116,7 +118,10 @@ ReactDOM.render(
     // <MyParent />,
 
     // form
-    <MyForm />,
+    // <MyForm />,
+
+    // form
+    <MyTextarea />,
     document.getElementById('root')
 );
 
