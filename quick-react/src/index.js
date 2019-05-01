@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 import MySelect from './MySelect';
 // import MyTextarea from './MyTextarea';
@@ -50,7 +50,7 @@ import MySelect from './MySelect';
 
 ReactDOM.render(
     // default
-    // <App />, 
+    <App />,
 
     // prop-basic
     // <MyHello />,
@@ -125,7 +125,7 @@ ReactDOM.render(
     // <MyTextarea />,
 
     // from select
-    <MySelect />,
+    // <MySelect />,
     document.getElementById('root')
 );
 
